@@ -1,0 +1,135 @@
+
+/* ກຳນົດຄ່າເລີ່ມຕົ້ນ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Lao', Arial, sans-serif;
+}
+
+/* ຕົກແຕ່ງພື້ນຫຼັງ */
+body {
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ກ່ອງຫຼັກ */
+.container {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ຫົວຂໍ້ */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ສ່ວນ Input */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* ຊ່ອງປ້ອນຂໍ້ຄວາມ */
+#taskInput {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    min-width: 0;
+}
+
+#taskInput:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* ປຸ່ມ Add */
+#addBtn {
+    padding: 12px 24px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addBtn:hover {
+    background: #5568d3;
+}
+
+/* ລາຍການ Task */
+#taskList {
+    list-style: none;
+}
+
+.task-item {
+    background: #f8f9fa;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ຂໍ້ຄວາມ Task */
+.task-text {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+/* ກຸ່ມປຸ່ມ */
+.task-actions {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+/* ປຸ່ມ Edit */
+.edit-btn {
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #d68910;
+}
+
+/* ປຸ່ມ Delete */
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* ວຽກທີ່ສຳເລັດ */
+.task-item.completed .task-text {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
